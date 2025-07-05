@@ -46,6 +46,7 @@ Above: the full system wired up — including OLED, keypad, servo, buzzer, and S
 
 ---
 
+
 ## 🔌 GPIO Pin Mapping
 
 | Function   | STM32 Pin | Notes                      |
@@ -54,4 +55,23 @@ Above: the full system wired up — including OLED, keypad, servo, buzzer, and S
 | OLED SCL   | PB8       | I2C1                       |
 | Servo PWM  | TIM1_CH2  | Configurable               |
 | Buzzer PWM | TIM3_CH1  | Configurable               |
-| UART
+| UART TX    | PA2       | USART2                     |
+| UART RX    | PA3       | USART2                     |
+
+### Keypad Mapping (Standard 4x4)
+
+| Row | STM32 Pin |
+|------|-----------|
+| R1   | PA8       |
+| R2   | PB10      |
+| R3   | PB4       |
+| R4   | PB5       |
+
+| Column | STM32 Pin |
+|--------|-----------|
+| C1     | PA4       |
+| C2     | PB0       |
+| C3     | PC1       |
+| C4     | PC0       |
+
+---
